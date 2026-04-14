@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f8ef7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bellyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0eaff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c7d9ff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)" />
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#4f8ef7" stroke-width="3" opacity="0.5" />
+
+  <!-- Subtle grid / code pattern in background -->
+  <g opacity="0.07" stroke="#4f8ef7" stroke-width="1">
+    <line x1="60" y1="60" x2="340" y2="60"/>
+    <line x1="60" y1="100" x2="340" y2="100"/>
+    <line x1="60" y1="300" x2="340" y2="300"/>
+    <line x1="60" y1="340" x2="340" y2="340"/>
+    <line x1="60" y1="60" x2="60" y2="340"/>
+    <line x1="340" y1="60" x2="340" y2="340"/>
+  </g>
+
+  <!-- Small decorative code brackets -->
+  <text x="52" y="215" font-family="monospace" font-size="36" fill="#4f8ef7" opacity="0.25" font-weight="bold">{</text>
+  <text x="330" y="215" font-family="monospace" font-size="36" fill="#4f8ef7" opacity="0.25" font-weight="bold">}</text>
+
+  <!-- ===== OWL BODY ===== -->
+
+  <!-- Tail feathers -->
+  <ellipse cx="200" cy="315" rx="28" ry="12" fill="#1e40af" />
+
+  <!-- Main body -->
+  <ellipse cx="200" cy="255" rx="68" ry="82" fill="url(#bodyGrad)" />
+
+  <!-- Belly / chest -->
+  <ellipse cx="200" cy="270" rx="42" ry="58" fill="url(#bellyGrad)" />
+
+  <!-- Belly feather texture lines -->
+  <g stroke="#a5b4fc" stroke-width="1.2" opacity="0.5">
+    <path d="M185 240 Q200 245 215 240" fill="none"/>
+    <path d="M180 255 Q200 261 220 255" fill="none"/>
+    <path d="M182 270 Q200 277 218 270" fill="none"/>
+    <path d="M185 285 Q200 291 215 285" fill="none"/>
+    <path d="M188 300 Q200 305 212 300" fill="none"/>
+  </g>
+
+  <!-- Wings (left) -->
+  <ellipse cx="148" cy="268" rx="30" ry="60" fill="#1d4ed8" transform="rotate(-12,148,268)" />
+  <!-- Wing feather details (left) -->
+  <g stroke="#3b82f6" stroke-width="1" fill="none" opacity="0.7">
+    <path d="M132 255 Q148 260 158 250"/>
+    <path d="M128 272 Q148 278 160 266"/>
+    <path d="M130 289 Q148 295 160 282"/>
+  </g>
+
+  <!-- Wings (right) -->
+  <ellipse cx="252" cy="268" rx="30" ry="60" fill="#1d4ed8" transform="rotate(12,252,268)" />
+  <!-- Wing feather details (right) -->
+  <g stroke="#3b82f6" stroke-width="1" fill="none" opacity="0.7">
+    <path d="M268 255 Q252 260 242 250"/>
+    <path d="M272 272 Q252 278 240 266"/>
+    <path d="M270 289 Q252 295 240 282"/>
+  </g>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="182" rx="62" ry="58" fill="url(#bodyGrad)" />
+
+  <!-- Ear tufts (cute pointy ears) -->
+  <polygon points="165,140 155,108 178,132" fill="#2563eb" />
+  <polygon points="168,138 158,110 180,130" fill="#3b82f6" opacity="0.5"/>
+  <polygon points="235,140 245,108 222,132" fill="#2563eb" />
+  <polygon points="232,138 242,110 220,130" fill="#3b82f6" opacity="0.5"/>
+
+  <!-- Facial disc (light colored face area) -->
+  <ellipse cx="200" cy="188" rx="48" ry="44" fill="#dbeafe" opacity="0.18" />
+
+  <!-- Left eye -->
+  <circle cx="180" cy="183" r="22" fill="#0f172a" />
+  <circle cx="180" cy="183" r="18" fill="#1e3a8a" />
+  <circle cx="180" cy="183" r="14" fill="#38bdf8" filter="url(#glow)" />
+  <circle cx="180" cy="183" r="9" fill="#0ea5e9" />
+  <circle cx="180" cy="183" r="5" fill="#0c4a6e" />
+  <!-- Eye shine -->
+  <circle cx="175" cy="178" r="3.5" fill="white" opacity="0.9" />
+  <circle cx="185" cy="188" r="1.5" fill="white" opacity="0.5" />
+
+  <!-- Right eye -->
+  <circle cx="220" cy="183" r="22" fill="#0f172a" />
+  <circle cx="220" cy="183" r="18" fill="#1e3a8a" />
+  <circle cx="220" cy="183" r="14" fill="#38bdf8" filter="url(#glow)" />
+  <circle cx="220" cy="183" r="9" fill="#0ea5e9" />
+  <circle cx="220" cy="183" r="5" fill="#0c4a6e" />
+  <!-- Eye shine -->
+  <circle cx="215" cy="178" r="3.5" fill="white" opacity="0.9" />
+  <circle cx="225" cy="188" r="1.5" fill="white" opacity="0.5" />
+
+  <!-- Beak -->
+  <polygon points="200,198 191,213 209,213" fill="#fbbf24" />
+  <polygon points="200,205 191,213 209,213" fill="#f59e0b" />
+  <!-- Beak highlight -->
+  <line x1="196" y1="206" x2="204" y2="206" stroke="#fde68a" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Feet / talons -->
+  <g fill="#fbbf24">
+    <!-- Left foot -->
+    <ellipse cx="182" cy="332" rx="8" ry="5" />
+    <path d="M174,332 Q170,342 168,346" stroke="#f59e0b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M178,334 Q175,344 174,348" stroke="#f59e0b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M182,335 Q181,345 181,350" stroke="#f59e0b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M186,334 Q187,344 188,348" stroke="#f59e0b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Right foot -->
+    <ellipse cx="218" cy="332" rx="8" ry="5" />
+    <path d="M226,332 Q230,342 232,346" stroke="#f59e0b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M222,334 Q225,344 226,348" stroke="#f59e0b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M218,335 Q219,345 219,350" stroke="#f59e0b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M214,334 Q213,344 212,348" stroke="#f59e0b" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Small decorative stars / sparkles around the owl -->
+  <g fill="#93c5fd" filter="url(#glow)">
+    <polygon points="95,145 98,138 101,145 108,145 103,150 105,157 98,153 91,157 93,150 88,145" opacity="0.7" transform="scale(0.6) translate(63,93)"/>
+    <polygon points="305,115 307,109 309,115 315,115 311,119 312,125 307,121 302,125 303,119 299,115" opacity="0.6" transform="scale(0.5) translate(305,75)"/>
+  </g>
+
+  <!-- Small circuit dots / code nodes (decorative) -->
+  <g fill="#60a5fa" opacity="0.5">
+    <circle cx="88" cy="165" r="3"/>
+    <circle cx="100" cy="155" r="2"/>
+    <circle cx="78" cy="180" r="2.5"/>
+    <line x1="88" y1="165" x2="100" y2="155" stroke="#60a5fa" stroke-width="1"/>
+    <line x1="88" y1="165" x2="78" y2="180" stroke="#60a5fa" stroke-width="1"/>
+
+    <circle cx="312" cy="165" r="3"/>
+    <circle cx="300" cy="155" r="2"/>
+    <circle cx="322" cy="180" r="2.5"/>
+    <line x1="312" y1="165" x2="300" y2="155" stroke="#60a5fa" stroke-width="1"/>
+    <line x1="312" y1="165" x2="322" y2="180" stroke="#60a5fa" stroke-width="1"/>
+  </g>
+</svg>
