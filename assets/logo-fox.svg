@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bellyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)" />
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#f97316" stroke-width="3" opacity="0.5" />
+
+  <!-- Subtle grid / code pattern in background -->
+  <g opacity="0.07" stroke="#f97316" stroke-width="1">
+    <line x1="60" y1="60" x2="340" y2="60"/>
+    <line x1="60" y1="100" x2="340" y2="100"/>
+    <line x1="60" y1="300" x2="340" y2="300"/>
+    <line x1="60" y1="340" x2="340" y2="340"/>
+    <line x1="60" y1="60" x2="60" y2="340"/>
+    <line x1="340" y1="60" x2="340" y2="340"/>
+  </g>
+
+  <!-- Small decorative code brackets -->
+  <text x="52" y="215" font-family="monospace" font-size="36" fill="#f97316" opacity="0.25" font-weight="bold">{</text>
+  <text x="330" y="215" font-family="monospace" font-size="36" fill="#f97316" opacity="0.25" font-weight="bold">}</text>
+
+  <!-- ===== FOX BODY ===== -->
+
+  <!-- Fluffy tail -->
+  <ellipse cx="260" cy="310" rx="42" ry="28" fill="#ea580c" transform="rotate(-25,260,310)" />
+  <ellipse cx="268" cy="308" rx="18" ry="12" fill="#fef3c7" transform="rotate(-25,268,308)" />
+
+  <!-- Main body -->
+  <ellipse cx="200" cy="268" rx="62" ry="72" fill="url(#bodyGrad)" />
+
+  <!-- Belly -->
+  <ellipse cx="200" cy="278" rx="38" ry="52" fill="url(#bellyGrad)" />
+
+  <!-- Front legs -->
+  <ellipse cx="172" cy="328" rx="14" ry="20" fill="#ea580c" />
+  <ellipse cx="228" cy="328" rx="14" ry="20" fill="#ea580c" />
+  <!-- Paws -->
+  <ellipse cx="172" cy="344" rx="16" ry="8" fill="#c2410c" />
+  <ellipse cx="228" cy="344" rx="16" ry="8" fill="#c2410c" />
+
+  <!-- Head -->
+  <ellipse cx="200" cy="188" rx="58" ry="54" fill="url(#bodyGrad)" />
+
+  <!-- Pointy ears -->
+  <polygon points="162,152 148,108 185,142" fill="#ea580c" />
+  <polygon points="164,150 152,112 184,140" fill="#f97316" opacity="0.6"/>
+  <!-- Inner ear -->
+  <polygon points="164,148 155,118 180,140" fill="#fda4af" opacity="0.8"/>
+
+  <polygon points="238,152 252,108 215,142" fill="#ea580c" />
+  <polygon points="236,150 248,112 216,140" fill="#f97316" opacity="0.6"/>
+  <!-- Inner ear -->
+  <polygon points="236,148 245,118 220,140" fill="#fda4af" opacity="0.8"/>
+
+  <!-- White face markings -->
+  <ellipse cx="200" cy="196" rx="36" ry="30" fill="#fef3c7" opacity="0.9" />
+
+  <!-- Left eye -->
+  <circle cx="180" cy="182" r="18" fill="#1c1917" />
+  <circle cx="180" cy="182" r="14" fill="#292524" />
+  <circle cx="180" cy="182" r="9" fill="#16a34a" filter="url(#glow)" />
+  <circle cx="180" cy="182" r="5" fill="#15803d" />
+  <circle cx="180" cy="182" r="2.5" fill="#052e16" />
+  <!-- Eye shine -->
+  <circle cx="175" cy="177" r="3" fill="white" opacity="0.9" />
+  <circle cx="184" cy="186" r="1.5" fill="white" opacity="0.5" />
+
+  <!-- Right eye -->
+  <circle cx="220" cy="182" r="18" fill="#1c1917" />
+  <circle cx="220" cy="182" r="14" fill="#292524" />
+  <circle cx="220" cy="182" r="9" fill="#16a34a" filter="url(#glow)" />
+  <circle cx="220" cy="182" r="5" fill="#15803d" />
+  <circle cx="220" cy="182" r="2.5" fill="#052e16" />
+  <!-- Eye shine -->
+  <circle cx="215" cy="177" r="3" fill="white" opacity="0.9" />
+  <circle cx="224" cy="186" r="1.5" fill="white" opacity="0.5" />
+
+  <!-- Nose -->
+  <ellipse cx="200" cy="206" rx="8" ry="6" fill="#1c1917" />
+  <circle cx="197" cy="204" r="2" fill="#374151" opacity="0.7"/>
+
+  <!-- Mouth -->
+  <path d="M200,212 Q194,218 190,216" stroke="#7c3aed" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M200,212 Q206,218 210,216" stroke="#7c3aed" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Whiskers -->
+  <line x1="168" y1="208" x2="190" y2="210" stroke="#1c1917" stroke-width="1.2" opacity="0.5"/>
+  <line x1="166" y1="214" x2="189" y2="213" stroke="#1c1917" stroke-width="1.2" opacity="0.5"/>
+  <line x1="232" y1="208" x2="210" y2="210" stroke="#1c1917" stroke-width="1.2" opacity="0.5"/>
+  <line x1="234" y1="214" x2="211" y2="213" stroke="#1c1917" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- Small circuit dots (decorative) -->
+  <g fill="#fb923c" opacity="0.5">
+    <circle cx="88" cy="165" r="3"/>
+    <circle cx="100" cy="155" r="2"/>
+    <circle cx="78" cy="180" r="2.5"/>
+    <line x1="88" y1="165" x2="100" y2="155" stroke="#fb923c" stroke-width="1"/>
+    <line x1="88" y1="165" x2="78" y2="180" stroke="#fb923c" stroke-width="1"/>
+    <circle cx="312" cy="165" r="3"/>
+    <circle cx="300" cy="155" r="2"/>
+    <circle cx="322" cy="180" r="2.5"/>
+    <line x1="312" y1="165" x2="300" y2="155" stroke="#fb923c" stroke-width="1"/>
+    <line x1="312" y1="165" x2="322" y2="180" stroke="#fb923c" stroke-width="1"/>
+  </g>
+</svg>
