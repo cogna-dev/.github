@@ -12,11 +12,11 @@
 
 ## Logo Options
 
-Four cute rabbit logo candidates are provided below — pick your favourite!
+Four bright, cute rabbit logo candidates — each with a distinct pose and tech-inspired decoration:
 
-| Preview | File | Style |
-|---------|------|-------|
-| <img src="assets/logo-rabbit.svg" width="120" height="120" alt="Coral Rabbit" /> | `assets/logo-rabbit.svg` | 🐰 Warm coral — big smile, rosy cheeks, heart accents |
-| <img src="assets/logo-rabbit-yellow.svg" width="120" height="120" alt="Yellow Rabbit" /> | `assets/logo-rabbit-yellow.svg` | 🌟 Sunny yellow — tilted ears, star accents, bright glow |
-| <img src="assets/logo-rabbit-mint.svg" width="120" height="120" alt="Mint Rabbit" /> | `assets/logo-rabbit-mint.svg` | 🌿 Mint green — one droopy ear, flower crown, dimpled smile |
-| <img src="assets/logo-rabbit-pink.svg" width="120" height="120" alt="Pink Rabbit" /> | `assets/logo-rabbit-pink.svg` | 💕 Kawaii pink — bows on ears, heart nose, eyelashes |
+| Preview | File | Pose | Tech Accent |
+|---------|------|------|-------------|
+| <img src="assets/logo-rabbit.svg" width="120" height="120" alt="Coral Rabbit" /> | `assets/logo-rabbit.svg` | 🐰 **Coding** — arms on keyboard, focused expression | Circuit traces · `</>` symbol |
+| <img src="assets/logo-rabbit-yellow.svg" width="120" height="120" alt="Yellow Rabbit" /> | `assets/logo-rabbit-yellow.svg` | 🌟 **Leaping** — body tilted mid-dash, ears swept back | Binary digits · circuit nodes · speed lines |
+| <img src="assets/logo-rabbit-mint.svg" width="120" height="120" alt="Mint Rabbit" /> | `assets/logo-rabbit-mint.svg` | 🌿 **Waving** — right arm raised high, friendly lean | `{ }` brackets · WiFi arcs · dot matrix |
+| <img src="assets/logo-rabbit-pink.svg" width="120" height="120" alt="Pink Rabbit" /> | `assets/logo-rabbit-pink.svg` | 💕 **Thinking** — paw to chin, eyes looking upward | Hex grid · thought bubble with `010` binary |

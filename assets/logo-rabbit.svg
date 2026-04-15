@@ -1,130 +1,119 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#fff7ed;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#ffedd5;stop-opacity:1" />
+    <linearGradient id="cr-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8f0"/>
+      <stop offset="100%" stop-color="#ffe8cc"/>
     </linearGradient>
-    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#fdba74;stop-opacity:1" />
+    <linearGradient id="cr-body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fcd9b0"/>
+      <stop offset="100%" stop-color="#fab870"/>
     </linearGradient>
-    <linearGradient id="earGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#fb923c;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="softShadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#f97316" flood-opacity="0.25"/>
+    <filter id="cr-glow">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
-  <!-- Warm background circle -->
-  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)" />
-  <circle cx="200" cy="200" r="190" fill="none" stroke="#fb923c" stroke-width="4" opacity="0.6" />
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="190" fill="url(#cr-bg)"/>
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#f97316" stroke-width="3" opacity="0.45"/>
 
-  <!-- Sparkles -->
-  <g fill="#fb923c" opacity="0.5">
-    <circle cx="80" cy="100" r="4"/>
-    <circle cx="320" cy="100" r="4"/>
-    <circle cx="70" cy="130" r="2.5"/>
-    <circle cx="330" cy="130" r="2.5"/>
-    <circle cx="95" cy="85" r="2"/>
-    <circle cx="305" cy="85" r="2"/>
-  </g>
-  <!-- Star sparkles -->
-  <g fill="#fbbf24" opacity="0.7">
-    <polygon points="88,70 91,62 94,70 102,70 96,75 98,83 91,78 84,83 86,75 80,70" transform="scale(0.55) translate(73,55)"/>
-    <polygon points="312,70 315,62 318,70 326,70 320,75 322,83 315,78 308,83 310,75 304,70" transform="scale(0.55) translate(-28,55)"/>
+  <!-- Circuit traces -->
+  <g stroke="#f97316" stroke-width="1.5" opacity="0.22" fill="none">
+    <path d="M18,158 H62 V118 H102"/>
+    <path d="M382,158 H338 V118 H298"/>
+    <path d="M18,258 H56 V298 H96"/>
+    <path d="M382,258 H344 V298 H304"/>
+    <circle cx="62" cy="158" r="4.5" fill="#f97316"/>
+    <circle cx="62" cy="118" r="4.5" fill="#f97316"/>
+    <circle cx="338" cy="158" r="4.5" fill="#f97316"/>
+    <circle cx="338" cy="118" r="4.5" fill="#f97316"/>
+    <circle cx="56"  cy="258" r="4.5" fill="#f97316"/>
+    <circle cx="56"  cy="298" r="4.5" fill="#f97316"/>
+    <circle cx="344" cy="258" r="4.5" fill="#f97316"/>
+    <circle cx="344" cy="298" r="4.5" fill="#f97316"/>
   </g>
 
-  <!-- ===== CUTE BRIGHT RABBIT ===== -->
+  <!-- </> code symbol (top) -->
+  <text x="200" y="50" text-anchor="middle" font-family="monospace"
+        font-size="22" fill="#f97316" opacity="0.38" font-weight="bold">&lt;/&gt;</text>
+
+  <!-- Tail -->
+  <circle cx="200" cy="322" r="17" fill="#fab870"/>
+  <circle cx="200" cy="320" r="10" fill="#fff3e8" opacity="0.85"/>
 
   <!-- Body -->
-  <ellipse cx="200" cy="278" rx="62" ry="68" fill="url(#bodyGrad)" filter="url(#softShadow)"/>
+  <ellipse cx="200" cy="260" rx="57" ry="62" fill="url(#cr-body)"/>
+  <!-- Belly -->
+  <ellipse cx="200" cy="268" rx="35" ry="46" fill="#fff8f0"/>
 
-  <!-- Belly (lighter) -->
-  <ellipse cx="200" cy="288" rx="38" ry="50" fill="#fff7ed" />
+  <!-- LEFT arm: extended forward to keyboard -->
+  <path d="M150,270 C133,288 120,306 116,320" stroke="#fab870" stroke-width="24" stroke-linecap="round" fill="none"/>
+  <ellipse cx="113" cy="322" rx="18" ry="10" fill="#f97316"/>
 
-  <!-- Fluffy tail -->
-  <circle cx="200" cy="340" r="18" fill="#fdba74" />
-  <circle cx="200" cy="338" r="12" fill="#fed7aa" opacity="0.9"/>
+  <!-- RIGHT arm: extended forward to keyboard -->
+  <path d="M250,270 C267,288 280,306 284,320" stroke="#fab870" stroke-width="24" stroke-linecap="round" fill="none"/>
+  <ellipse cx="287" cy="322" rx="18" ry="10" fill="#f97316"/>
 
-  <!-- Front legs/paws -->
-  <ellipse cx="168" cy="330" rx="15" ry="22" fill="#fdba74" />
-  <ellipse cx="232" cy="330" rx="15" ry="22" fill="#fdba74" />
-  <ellipse cx="168" cy="348" rx="18" ry="9" fill="#fb923c" />
-  <ellipse cx="232" cy="348" rx="18" ry="9" fill="#fb923c" />
-  <!-- Toe lines -->
-  <g stroke="#ea580c" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6">
-    <line x1="162" y1="350" x2="162" y2="355"/>
-    <line x1="168" y1="352" x2="168" y2="357"/>
-    <line x1="174" y1="350" x2="174" y2="355"/>
-    <line x1="226" y1="350" x2="226" y2="355"/>
-    <line x1="232" y1="352" x2="232" y2="357"/>
-    <line x1="238" y1="350" x2="238" y2="355"/>
+  <!-- Keyboard -->
+  <rect x="106" y="328" width="188" height="40" rx="7" fill="#292524" opacity="0.88"/>
+  <g fill="#6b7280" opacity="0.85">
+    <rect x="114" y="335" width="11" height="7" rx="2"/>
+    <rect x="129" y="335" width="11" height="7" rx="2"/>
+    <rect x="144" y="335" width="11" height="7" rx="2"/>
+    <rect x="159" y="335" width="11" height="7" rx="2"/>
+    <rect x="174" y="335" width="11" height="7" rx="2"/>
+    <rect x="189" y="335" width="11" height="7" rx="2"/>
+    <rect x="204" y="335" width="11" height="7" rx="2"/>
+    <rect x="219" y="335" width="11" height="7" rx="2"/>
+    <rect x="234" y="335" width="11" height="7" rx="2"/>
+    <rect x="249" y="335" width="11" height="7" rx="2"/>
+    <rect x="264" y="335" width="22" height="7" rx="2"/>
+    <!-- space bar -->
+    <rect x="148" y="347" width="104" height="7" rx="2"/>
+    <rect x="256" y="347" width="30" height="7" rx="2"/>
   </g>
 
   <!-- Head -->
-  <ellipse cx="200" cy="188" rx="60" ry="56" fill="url(#bodyGrad)" />
+  <ellipse cx="200" cy="179" rx="57" ry="52" fill="url(#cr-body)"/>
 
-  <!-- Long rabbit ears -->
-  <!-- Left ear outer -->
-  <ellipse cx="172" cy="112" rx="22" ry="68" fill="#fdba74" />
-  <!-- Left ear inner -->
-  <ellipse cx="172" cy="112" rx="12" ry="54" fill="#fda4af" />
-  <!-- Right ear outer -->
-  <ellipse cx="228" cy="112" rx="22" ry="68" fill="#fdba74" />
-  <!-- Right ear inner -->
-  <ellipse cx="228" cy="112" rx="12" ry="54" fill="#fda4af" />
+  <!-- Ears (both upright — attentive) -->
+  <ellipse cx="172" cy="104" rx="21" ry="66" fill="#fab870"/>
+  <ellipse cx="172" cy="104" rx="11" ry="52" fill="#fda4af"/>
+  <ellipse cx="228" cy="104" rx="21" ry="66" fill="#fab870"/>
+  <ellipse cx="228" cy="104" rx="11" ry="52" fill="#fda4af"/>
 
-  <!-- Rosy cheeks -->
-  <circle cx="162" cy="200" r="18" fill="#fb7185" opacity="0.35"/>
-  <circle cx="238" cy="200" r="18" fill="#fb7185" opacity="0.35"/>
+  <!-- Cheeks -->
+  <circle cx="163" cy="191" r="17" fill="#fb7185" opacity="0.28"/>
+  <circle cx="237" cy="191" r="17" fill="#fb7185" opacity="0.28"/>
 
-  <!-- Left eye (big, cute, sparkling) -->
-  <circle cx="180" cy="182" r="20" fill="#1c1917" />
-  <circle cx="180" cy="182" r="15" fill="#292524" />
-  <circle cx="180" cy="182" r="10" fill="#f97316" filter="url(#glow)" />
-  <circle cx="180" cy="182" r="6" fill="#c2410c" />
-  <circle cx="180" cy="182" r="3" fill="#1c1917" />
-  <!-- Eye shine -->
-  <circle cx="174" cy="176" r="4" fill="white" opacity="0.95" />
-  <circle cx="184" cy="188" r="2" fill="white" opacity="0.5" />
+  <!-- Left eye -->
+  <circle cx="179" cy="176" r="19" fill="#1c1917"/>
+  <circle cx="179" cy="176" r="14" fill="#292524"/>
+  <circle cx="179" cy="176" r="9"  fill="#f97316" filter="url(#cr-glow)"/>
+  <circle cx="179" cy="176" r="5"  fill="#c2410c"/>
+  <circle cx="179" cy="176" r="2.5" fill="#1c1917"/>
+  <circle cx="173" cy="170" r="3.5" fill="white" opacity="0.95"/>
+  <circle cx="183" cy="182" r="1.8" fill="white" opacity="0.45"/>
 
   <!-- Right eye -->
-  <circle cx="220" cy="182" r="20" fill="#1c1917" />
-  <circle cx="220" cy="182" r="15" fill="#292524" />
-  <circle cx="220" cy="182" r="10" fill="#f97316" filter="url(#glow)" />
-  <circle cx="220" cy="182" r="6" fill="#c2410c" />
-  <circle cx="220" cy="182" r="3" fill="#1c1917" />
-  <!-- Eye shine -->
-  <circle cx="214" cy="176" r="4" fill="white" opacity="0.95" />
-  <circle cx="224" cy="188" r="2" fill="white" opacity="0.5" />
+  <circle cx="221" cy="176" r="19" fill="#1c1917"/>
+  <circle cx="221" cy="176" r="14" fill="#292524"/>
+  <circle cx="221" cy="176" r="9"  fill="#f97316" filter="url(#cr-glow)"/>
+  <circle cx="221" cy="176" r="5"  fill="#c2410c"/>
+  <circle cx="221" cy="176" r="2.5" fill="#1c1917"/>
+  <circle cx="215" cy="170" r="3.5" fill="white" opacity="0.95"/>
+  <circle cx="225" cy="182" r="1.8" fill="white" opacity="0.45"/>
 
-  <!-- Nose (cute button nose) -->
-  <ellipse cx="200" cy="204" rx="7" ry="5" fill="#f43f5e" />
-  <circle cx="198" cy="202" r="2" fill="#fb7185" opacity="0.6"/>
+  <!-- Nose -->
+  <ellipse cx="200" cy="196" rx="6" ry="5" fill="#f43f5e"/>
 
-  <!-- Big smile! -->
-  <path d="M188,214 Q200,228 212,214" stroke="#ea580c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Big smile -->
+  <path d="M188,208 Q200,222 212,208" stroke="#e04020" stroke-width="2.5" fill="none" stroke-linecap="round"/>
 
   <!-- Whiskers -->
-  <line x1="156" y1="206" x2="188" y2="208" stroke="#f97316" stroke-width="1.5" opacity="0.5"/>
-  <line x1="154" y1="212" x2="187" y2="213" stroke="#f97316" stroke-width="1.5" opacity="0.5"/>
-  <line x1="244" y1="206" x2="212" y2="208" stroke="#f97316" stroke-width="1.5" opacity="0.5"/>
-  <line x1="246" y1="212" x2="213" y2="213" stroke="#f97316" stroke-width="1.5" opacity="0.5"/>
-
-  <!-- Heart accent -->
-  <g transform="translate(310,230)" fill="#f43f5e" opacity="0.6">
-    <path d="M0,-8 C-5,-14 -14,-14 -14,-6 C-14,0 0,10 0,10 C0,10 14,0 14,-6 C14,-14 5,-14 0,-8 Z" transform="scale(0.7)"/>
-  </g>
-  <g transform="translate(90,230)" fill="#f43f5e" opacity="0.6">
-    <path d="M0,-8 C-5,-14 -14,-14 -14,-6 C-14,0 0,10 0,10 C0,10 14,0 14,-6 C14,-14 5,-14 0,-8 Z" transform="scale(0.7)"/>
-  </g>
+  <line x1="157" y1="199" x2="188" y2="201" stroke="#f97316" stroke-width="1.5" opacity="0.42"/>
+  <line x1="155" y1="206" x2="187" y2="207" stroke="#f97316" stroke-width="1.5" opacity="0.42"/>
+  <line x1="243" y1="199" x2="212" y2="201" stroke="#f97316" stroke-width="1.5" opacity="0.42"/>
+  <line x1="245" y1="206" x2="213" y2="207" stroke="#f97316" stroke-width="1.5" opacity="0.42"/>
 </svg>

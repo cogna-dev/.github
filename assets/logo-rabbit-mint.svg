@@ -1,146 +1,119 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f0fdf4;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#dcfce7;stop-opacity:1" />
+    <linearGradient id="mr-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
     </linearGradient>
-    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#bbf7d0;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#6ee7b7;stop-opacity:1" />
+    <linearGradient id="mr-body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bbf7d0"/>
+      <stop offset="100%" stop-color="#6ee7b7"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="softShadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#10b981" flood-opacity="0.25"/>
+    <filter id="mr-glow">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
-  <!-- Mint background -->
-  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)" />
-  <circle cx="200" cy="200" r="190" fill="none" stroke="#34d399" stroke-width="4" opacity="0.7" />
+  <!-- Background -->
+  <circle cx="200" cy="200" r="190" fill="url(#mr-bg)"/>
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#10b981" stroke-width="3" opacity="0.45"/>
 
-  <!-- Clover/leaf decorations -->
-  <g opacity="0.55">
-    <!-- Left clover -->
-    <circle cx="85" cy="155" r="8" fill="#34d399"/>
-    <circle cx="73" cy="148" r="8" fill="#34d399"/>
-    <circle cx="73" cy="162" r="8" fill="#34d399"/>
-    <circle cx="97" cy="162" r="8" fill="#34d399"/>
-    <circle cx="97" cy="148" r="8" fill="#34d399"/>
-    <!-- Right clover -->
-    <circle cx="315" cy="155" r="8" fill="#34d399"/>
-    <circle cx="303" cy="148" r="8" fill="#34d399"/>
-    <circle cx="303" cy="162" r="8" fill="#34d399"/>
-    <circle cx="327" cy="162" r="8" fill="#34d399"/>
-    <circle cx="327" cy="148" r="8" fill="#34d399"/>
-  </g>
-  <!-- Clover stems -->
-  <line x1="85" y1="163" x2="85" y2="180" stroke="#16a34a" stroke-width="2" opacity="0.5"/>
-  <line x1="315" y1="163" x2="315" y2="180" stroke="#16a34a" stroke-width="2" opacity="0.5"/>
+  <!-- { } code brackets (prominent, background) -->
+  <text x="38"  y="222" font-family="monospace" font-size="52" fill="#10b981" opacity="0.18" font-weight="bold">{</text>
+  <text x="332" y="222" font-family="monospace" font-size="52" fill="#10b981" opacity="0.18" font-weight="bold">}</text>
 
-  <!-- Small flowers around -->
-  <g opacity="0.5">
-    <circle cx="76" cy="240" r="5" fill="#fbbf24"/>
-    <circle cx="68" cy="233" r="4" fill="#fde68a"/>
-    <circle cx="84" cy="233" r="4" fill="#fde68a"/>
-    <circle cx="68" cy="247" r="4" fill="#fde68a"/>
-    <circle cx="84" cy="247" r="4" fill="#fde68a"/>
-    <circle cx="76" cy="240" r="3" fill="white"/>
-    <circle cx="324" cy="240" r="5" fill="#fbbf24"/>
-    <circle cx="316" cy="233" r="4" fill="#fde68a"/>
-    <circle cx="332" cy="233" r="4" fill="#fde68a"/>
-    <circle cx="316" cy="247" r="4" fill="#fde68a"/>
-    <circle cx="332" cy="247" r="4" fill="#fde68a"/>
-    <circle cx="324" cy="240" r="3" fill="white"/>
+  <!-- WiFi-style signal arcs (upper right) -->
+  <g stroke="#10b981" stroke-width="2.5" opacity="0.3" fill="none" stroke-linecap="round">
+    <path d="M310,78 A28,28 0 0 1 338,78"/>
+    <path d="M303,68 A42,42 0 0 1 345,68"/>
+    <path d="M296,58 A56,56 0 0 1 352,58"/>
+    <circle cx="324" cy="90" r="4" fill="#10b981"/>
   </g>
 
-  <!-- ===== MINT GREEN RABBIT ===== -->
-
-  <!-- Body -->
-  <ellipse cx="200" cy="278" rx="62" ry="68" fill="url(#bodyGrad)" filter="url(#softShadow)"/>
-  <!-- Belly -->
-  <ellipse cx="200" cy="288" rx="38" ry="50" fill="#f0fdf4" />
-  <!-- Fluffy tail -->
-  <circle cx="200" cy="340" r="18" fill="#6ee7b7" />
-  <circle cx="200" cy="338" r="12" fill="#bbf7d0" opacity="0.9"/>
-
-  <!-- Front legs -->
-  <ellipse cx="168" cy="330" rx="15" ry="22" fill="#6ee7b7" />
-  <ellipse cx="232" cy="330" rx="15" ry="22" fill="#6ee7b7" />
-  <ellipse cx="168" cy="348" rx="18" ry="9" fill="#34d399" />
-  <ellipse cx="232" cy="348" rx="18" ry="9" fill="#34d399" />
-  <g stroke="#059669" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6">
-    <line x1="162" y1="350" x2="162" y2="355"/>
-    <line x1="168" y1="352" x2="168" y2="357"/>
-    <line x1="174" y1="350" x2="174" y2="355"/>
-    <line x1="226" y1="350" x2="226" y2="355"/>
-    <line x1="232" y1="352" x2="232" y2="357"/>
-    <line x1="238" y1="350" x2="238" y2="355"/>
+  <!-- Circuit traces (lower left) -->
+  <g stroke="#10b981" stroke-width="1.4" opacity="0.22" fill="none">
+    <path d="M22,288 H60 V325 H98"/>
+    <circle cx="60"  cy="288" r="4" fill="#10b981"/>
+    <circle cx="60"  cy="325" r="4" fill="#10b981"/>
+    <path d="M22,325 H42 V360"/>
+    <circle cx="42"  cy="325" r="3.5" fill="#10b981"/>
   </g>
 
-  <!-- Head -->
-  <ellipse cx="200" cy="188" rx="60" ry="56" fill="url(#bodyGrad)" />
-
-  <!-- Long rabbit ears (one droopy for extra cuteness) -->
-  <!-- Left ear (upright) -->
-  <ellipse cx="175" cy="112" rx="22" ry="68" fill="#6ee7b7" />
-  <ellipse cx="175" cy="112" rx="12" ry="54" fill="#fda4af" />
-  <!-- Right ear (slightly drooped) -->
-  <ellipse cx="225" cy="120" rx="22" ry="68" fill="#6ee7b7" transform="rotate(18,225,168)"/>
-  <ellipse cx="225" cy="120" rx="12" ry="54" fill="#fda4af" transform="rotate(18,225,168)"/>
-
-  <!-- Small flower on left ear -->
-  <g transform="translate(175,80)" opacity="0.9">
-    <circle cx="0" cy="0" r="6" fill="#fbbf24"/>
-    <circle cx="-8" cy="-4" r="5" fill="#fde68a"/>
-    <circle cx="8" cy="-4" r="5" fill="#fde68a"/>
-    <circle cx="-8" cy="4" r="5" fill="#fde68a"/>
-    <circle cx="8" cy="4" r="5" fill="#fde68a"/>
-    <circle cx="0" cy="0" r="3.5" fill="white"/>
+  <!-- Small dot matrix pattern (upper left) -->
+  <g fill="#10b981" opacity="0.2">
+    <circle cx="68" cy="80" r="3.5"/>  <circle cx="84" cy="80" r="3.5"/>  <circle cx="100" cy="80" r="3.5"/>
+    <circle cx="68" cy="95" r="3.5"/>  <circle cx="84" cy="95" r="3.5"/>  <circle cx="100" cy="95" r="3.5"/>
+    <circle cx="68" cy="110" r="3.5"/> <circle cx="84" cy="110" r="3.5"/> <circle cx="100" cy="110" r="3.5"/>
   </g>
 
-  <!-- Rosy cheeks -->
-  <circle cx="162" cy="200" r="18" fill="#fb7185" opacity="0.3"/>
-  <circle cx="238" cy="200" r="18" fill="#fb7185" opacity="0.3"/>
+  <!-- ===== WAVING RABBIT (body leaned ~6 degrees left, right arm raised) ===== -->
+  <g transform="rotate(-6, 200, 240)">
+    <!-- Tail -->
+    <circle cx="200" cy="322" r="16" fill="#6ee7b7"/>
+    <circle cx="200" cy="320" r="10" fill="#f0fdf4" opacity="0.85"/>
 
-  <!-- Left eye -->
-  <circle cx="180" cy="182" r="20" fill="#1c1917" />
-  <circle cx="180" cy="182" r="15" fill="#292524" />
-  <circle cx="180" cy="182" r="10" fill="#34d399" filter="url(#glow)" />
-  <circle cx="180" cy="182" r="6" fill="#059669" />
-  <circle cx="180" cy="182" r="3" fill="#1c1917" />
-  <circle cx="174" cy="176" r="4" fill="white" opacity="0.95" />
-  <circle cx="184" cy="188" r="2" fill="white" opacity="0.5" />
+    <!-- Body -->
+    <ellipse cx="200" cy="262" rx="56" ry="60" fill="url(#mr-body)"/>
+    <!-- Belly -->
+    <ellipse cx="200" cy="270" rx="34" ry="44" fill="#f0fdf4"/>
 
-  <!-- Right eye (slightly squinted for extra cute expression) -->
-  <circle cx="220" cy="182" r="20" fill="#1c1917" />
-  <circle cx="220" cy="182" r="15" fill="#292524" />
-  <circle cx="220" cy="182" r="10" fill="#34d399" filter="url(#glow)" />
-  <circle cx="220" cy="182" r="6" fill="#059669" />
-  <circle cx="220" cy="182" r="3" fill="#1c1917" />
-  <circle cx="214" cy="176" r="4" fill="white" opacity="0.95" />
-  <circle cx="224" cy="188" r="2" fill="white" opacity="0.5" />
-  <!-- Squint line on right eye -->
-  <path d="M208,173 Q220,168 232,173" stroke="#6ee7b7" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <!-- Left leg (standard) -->
+    <ellipse cx="174" cy="322" rx="14" ry="20" fill="#6ee7b7"/>
+    <ellipse cx="168" cy="336" rx="17" ry="9"  fill="#34d399"/>
 
-  <!-- Nose -->
-  <ellipse cx="200" cy="204" rx="7" ry="5" fill="#f43f5e" />
-  <circle cx="198" cy="202" r="2" fill="#fb7185" opacity="0.6"/>
+    <!-- Right leg (standard) -->
+    <ellipse cx="226" cy="322" rx="14" ry="20" fill="#6ee7b7"/>
+    <ellipse cx="232" cy="336" rx="17" ry="9"  fill="#34d399"/>
 
-  <!-- Big smile + dimples -->
-  <path d="M186,214 Q200,230 214,214" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
-  <!-- Dimples -->
-  <circle cx="186" cy="214" r="2.5" fill="#34d399" opacity="0.6"/>
-  <circle cx="214" cy="214" r="2.5" fill="#34d399" opacity="0.6"/>
+    <!-- Left arm (resting at side) -->
+    <path d="M150,272 C142,285 140,300 144,314" stroke="#6ee7b7" stroke-width="22" stroke-linecap="round" fill="none"/>
+    <ellipse cx="144" cy="317" rx="16" ry="9" fill="#34d399" transform="rotate(-5,144,317)"/>
 
-  <!-- Whiskers -->
-  <line x1="156" y1="206" x2="188" y2="208" stroke="#059669" stroke-width="1.5" opacity="0.5"/>
-  <line x1="154" y1="212" x2="187" y2="213" stroke="#059669" stroke-width="1.5" opacity="0.5"/>
-  <line x1="244" y1="206" x2="212" y2="208" stroke="#059669" stroke-width="1.5" opacity="0.5"/>
-  <line x1="246" y1="212" x2="213" y2="213" stroke="#059669" stroke-width="1.5" opacity="0.5"/>
+    <!-- Right arm: RAISED HIGH in wave -->
+    <path d="M250,268 C262,252 270,230 264,210" stroke="#6ee7b7" stroke-width="22" stroke-linecap="round" fill="none"/>
+    <ellipse cx="262" cy="205" rx="16" ry="10" fill="#34d399" transform="rotate(35,262,205)"/>
+
+    <!-- Head -->
+    <ellipse cx="200" cy="180" rx="56" ry="51" fill="url(#mr-body)"/>
+
+    <!-- Ears: left upright, right slightly tilted (from body lean) -->
+    <ellipse cx="172" cy="105" rx="21" ry="66" fill="#6ee7b7"/>
+    <ellipse cx="172" cy="105" rx="11" ry="52" fill="#fda4af"/>
+    <ellipse cx="228" cy="105" rx="21" ry="66" fill="#6ee7b7" transform="rotate(5,228,155)"/>
+    <ellipse cx="228" cy="105" rx="11" ry="52" fill="#fda4af" transform="rotate(5,228,155)"/>
+
+    <!-- Cheeks -->
+    <circle cx="163" cy="192" r="17" fill="#fb7185" opacity="0.27"/>
+    <circle cx="237" cy="192" r="17" fill="#fb7185" opacity="0.27"/>
+
+    <!-- Left eye -->
+    <circle cx="179" cy="177" r="19" fill="#1c1917"/>
+    <circle cx="179" cy="177" r="14" fill="#292524"/>
+    <circle cx="179" cy="177" r="9"  fill="#34d399" filter="url(#mr-glow)"/>
+    <circle cx="179" cy="177" r="5"  fill="#059669"/>
+    <circle cx="179" cy="177" r="2.5" fill="#1c1917"/>
+    <circle cx="173" cy="171" r="3.5" fill="white" opacity="0.95"/>
+    <circle cx="183" cy="183" r="1.8" fill="white" opacity="0.45"/>
+
+    <!-- Right eye -->
+    <circle cx="221" cy="177" r="19" fill="#1c1917"/>
+    <circle cx="221" cy="177" r="14" fill="#292524"/>
+    <circle cx="221" cy="177" r="9"  fill="#34d399" filter="url(#mr-glow)"/>
+    <circle cx="221" cy="177" r="5"  fill="#059669"/>
+    <circle cx="221" cy="177" r="2.5" fill="#1c1917"/>
+    <circle cx="215" cy="171" r="3.5" fill="white" opacity="0.95"/>
+    <circle cx="225" cy="183" r="1.8" fill="white" opacity="0.45"/>
+
+    <!-- Nose -->
+    <ellipse cx="200" cy="197" rx="6" ry="5" fill="#f43f5e"/>
+
+    <!-- Friendly smile -->
+    <path d="M188,209 Q200,223 212,209" stroke="#059669" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Whiskers -->
+    <line x1="157" y1="200" x2="188" y2="202" stroke="#10b981" stroke-width="1.5" opacity="0.42"/>
+    <line x1="155" y1="207" x2="187" y2="208" stroke="#10b981" stroke-width="1.5" opacity="0.42"/>
+    <line x1="243" y1="200" x2="212" y2="202" stroke="#10b981" stroke-width="1.5" opacity="0.42"/>
+    <line x1="245" y1="207" x2="213" y2="208" stroke="#10b981" stroke-width="1.5" opacity="0.42"/>
+  </g>
 </svg>
