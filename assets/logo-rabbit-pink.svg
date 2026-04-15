@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff1f2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffe4e6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fecdd3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fda4af;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#f43f5e" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Pink background -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)" />
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#f43f5e" stroke-width="4" opacity="0.5" />
+
+  <!-- Polka dots (kawaii style) -->
+  <g opacity="0.18" fill="#f43f5e">
+    <circle cx="80" cy="90" r="8"/>
+    <circle cx="130" cy="60" r="6"/>
+    <circle cx="50" cy="160" r="5"/>
+    <circle cx="320" cy="90" r="8"/>
+    <circle cx="270" cy="60" r="6"/>
+    <circle cx="350" cy="160" r="5"/>
+    <circle cx="60" cy="310" r="6"/>
+    <circle cx="340" cy="310" r="6"/>
+    <circle cx="100" cy="340" r="4"/>
+    <circle cx="300" cy="340" r="4"/>
+  </g>
+
+  <!-- Hearts decoration -->
+  <g opacity="0.5">
+    <g transform="translate(86,130)" fill="#f43f5e">
+      <path d="M0,-7 C-4,-12 -12,-12 -12,-5 C-12,0 0,9 0,9 C0,9 12,0 12,-5 C12,-12 4,-12 0,-7 Z" transform="scale(0.65)"/>
+    </g>
+    <g transform="translate(314,130)" fill="#f43f5e">
+      <path d="M0,-7 C-4,-12 -12,-12 -12,-5 C-12,0 0,9 0,9 C0,9 12,0 12,-5 C12,-12 4,-12 0,-7 Z" transform="scale(0.65)"/>
+    </g>
+    <g transform="translate(72,250)" fill="#fb7185">
+      <path d="M0,-7 C-4,-12 -12,-12 -12,-5 C-12,0 0,9 0,9 C0,9 12,0 12,-5 C12,-12 4,-12 0,-7 Z" transform="scale(0.5)"/>
+    </g>
+    <g transform="translate(328,250)" fill="#fb7185">
+      <path d="M0,-7 C-4,-12 -12,-12 -12,-5 C-12,0 0,9 0,9 C0,9 12,0 12,-5 C12,-12 4,-12 0,-7 Z" transform="scale(0.5)"/>
+    </g>
+  </g>
+
+  <!-- ===== KAWAII PINK RABBIT ===== -->
+
+  <!-- Body -->
+  <ellipse cx="200" cy="278" rx="62" ry="68" fill="url(#bodyGrad)" filter="url(#softShadow)"/>
+  <!-- Belly -->
+  <ellipse cx="200" cy="288" rx="38" ry="50" fill="#fff1f2" />
+  <!-- Fluffy tail -->
+  <circle cx="200" cy="340" r="18" fill="#fda4af" />
+  <circle cx="200" cy="338" r="12" fill="#fecdd3" opacity="0.9"/>
+
+  <!-- Front legs -->
+  <ellipse cx="168" cy="330" rx="15" ry="22" fill="#fda4af" />
+  <ellipse cx="232" cy="330" rx="15" ry="22" fill="#fda4af" />
+  <ellipse cx="168" cy="348" rx="18" ry="9" fill="#fb7185" />
+  <ellipse cx="232" cy="348" rx="18" ry="9" fill="#fb7185" />
+  <g stroke="#e11d48" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5">
+    <line x1="162" y1="350" x2="162" y2="355"/>
+    <line x1="168" y1="352" x2="168" y2="357"/>
+    <line x1="174" y1="350" x2="174" y2="355"/>
+    <line x1="226" y1="350" x2="226" y2="355"/>
+    <line x1="232" y1="352" x2="232" y2="357"/>
+    <line x1="238" y1="350" x2="238" y2="355"/>
+  </g>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="188" rx="60" ry="56" fill="url(#bodyGrad)" />
+
+  <!-- Long rabbit ears with bows -->
+  <!-- Left ear -->
+  <ellipse cx="172" cy="112" rx="22" ry="68" fill="#fda4af" />
+  <ellipse cx="172" cy="112" rx="12" ry="54" fill="#ffe4e6" />
+  <!-- Left ear bow -->
+  <g transform="translate(172,155)" fill="#f43f5e" opacity="0.9">
+    <ellipse cx="-8" cy="0" rx="8" ry="5" transform="rotate(-20,-8,0)"/>
+    <ellipse cx="8" cy="0" rx="8" ry="5" transform="rotate(20,8,0)"/>
+    <circle cx="0" cy="0" r="4" fill="#fb7185"/>
+  </g>
+
+  <!-- Right ear -->
+  <ellipse cx="228" cy="112" rx="22" ry="68" fill="#fda4af" />
+  <ellipse cx="228" cy="112" rx="12" ry="54" fill="#ffe4e6" />
+  <!-- Right ear bow -->
+  <g transform="translate(228,155)" fill="#f43f5e" opacity="0.9">
+    <ellipse cx="-8" cy="0" rx="8" ry="5" transform="rotate(-20,-8,0)"/>
+    <ellipse cx="8" cy="0" rx="8" ry="5" transform="rotate(20,8,0)"/>
+    <circle cx="0" cy="0" r="4" fill="#fb7185"/>
+  </g>
+
+  <!-- Rosy cheeks -->
+  <circle cx="162" cy="200" r="20" fill="#f43f5e" opacity="0.25"/>
+  <circle cx="238" cy="200" r="20" fill="#f43f5e" opacity="0.25"/>
+
+  <!-- Left eye (sparkly) -->
+  <circle cx="180" cy="182" r="20" fill="#1c1917" />
+  <circle cx="180" cy="182" r="15" fill="#292524" />
+  <circle cx="180" cy="182" r="10" fill="#f472b6" filter="url(#glow)" />
+  <circle cx="180" cy="182" r="6" fill="#be185d" />
+  <circle cx="180" cy="182" r="3" fill="#1c1917" />
+  <circle cx="174" cy="176" r="4" fill="white" opacity="0.95" />
+  <circle cx="184" cy="188" r="2" fill="white" opacity="0.5" />
+  <!-- Eyelash (kawaii) -->
+  <g stroke="#1c1917" stroke-width="1.5" stroke-linecap="round" opacity="0.7">
+    <line x1="163" y1="167" x2="167" y2="163"/>
+    <line x1="171" y1="163" x2="173" y2="159"/>
+    <line x1="179" y1="162" x2="180" y2="158"/>
+    <line x1="187" y1="163" x2="190" y2="159"/>
+  </g>
+
+  <!-- Right eye -->
+  <circle cx="220" cy="182" r="20" fill="#1c1917" />
+  <circle cx="220" cy="182" r="15" fill="#292524" />
+  <circle cx="220" cy="182" r="10" fill="#f472b6" filter="url(#glow)" />
+  <circle cx="220" cy="182" r="6" fill="#be185d" />
+  <circle cx="220" cy="182" r="3" fill="#1c1917" />
+  <circle cx="214" cy="176" r="4" fill="white" opacity="0.95" />
+  <circle cx="224" cy="188" r="2" fill="white" opacity="0.5" />
+  <!-- Eyelash (kawaii) -->
+  <g stroke="#1c1917" stroke-width="1.5" stroke-linecap="round" opacity="0.7">
+    <line x1="210" y1="163" x2="213" y2="159"/>
+    <line x1="218" y1="162" x2="219" y2="158"/>
+    <line x1="226" y1="163" x2="229" y2="159"/>
+    <line x1="233" y1="167" x2="237" y2="163"/>
+  </g>
+
+  <!-- Nose (tiny heart) -->
+  <g transform="translate(200,204)" fill="#e11d48">
+    <path d="M0,-5 C-3,-9 -8,-9 -8,-4 C-8,0 0,6 0,6 C0,6 8,0 8,-4 C8,-9 3,-9 0,-5 Z" transform="scale(0.8)"/>
+  </g>
+
+  <!-- Wide happy smile with U-shape -->
+  <path d="M185,215 Q200,232 215,215" stroke="#be185d" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Whiskers -->
+  <line x1="156" y1="206" x2="188" y2="208" stroke="#f43f5e" stroke-width="1.5" opacity="0.45"/>
+  <line x1="154" y1="212" x2="187" y2="213" stroke="#f43f5e" stroke-width="1.5" opacity="0.45"/>
+  <line x1="244" y1="206" x2="212" y2="208" stroke="#f43f5e" stroke-width="1.5" opacity="0.45"/>
+  <line x1="246" y1="212" x2="213" y2="213" stroke="#f43f5e" stroke-width="1.5" opacity="0.45"/>
+</svg>

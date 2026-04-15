@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fefce8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fef9c3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fde68a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#f59e0b" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Sunny yellow background -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)" />
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#fbbf24" stroke-width="4" opacity="0.7" />
+
+  <!-- Sun rays decoration -->
+  <g stroke="#fde68a" stroke-width="3" opacity="0.5" stroke-linecap="round">
+    <line x1="200" y1="10" x2="200" y2="30"/>
+    <line x1="200" y1="370" x2="200" y2="390"/>
+    <line x1="10" y1="200" x2="30" y2="200"/>
+    <line x1="370" y1="200" x2="390" y2="200"/>
+    <line x1="54" y1="54" x2="68" y2="68"/>
+    <line x1="332" y1="68" x2="346" y2="54"/>
+    <line x1="54" y1="346" x2="68" y2="332"/>
+    <line x1="332" y1="332" x2="346" y2="346"/>
+  </g>
+
+  <!-- Small flowers (decorative) -->
+  <g opacity="0.6">
+    <!-- Left flower -->
+    <circle cx="88" cy="155" r="7" fill="#fbbf24"/>
+    <circle cx="76" cy="148" r="5" fill="#fde68a"/>
+    <circle cx="100" cy="148" r="5" fill="#fde68a"/>
+    <circle cx="76" cy="162" r="5" fill="#fde68a"/>
+    <circle cx="100" cy="162" r="5" fill="#fde68a"/>
+    <circle cx="88" cy="155" r="4" fill="white"/>
+    <!-- Right flower -->
+    <circle cx="312" cy="155" r="7" fill="#fbbf24"/>
+    <circle cx="300" cy="148" r="5" fill="#fde68a"/>
+    <circle cx="324" cy="148" r="5" fill="#fde68a"/>
+    <circle cx="300" cy="162" r="5" fill="#fde68a"/>
+    <circle cx="324" cy="162" r="5" fill="#fde68a"/>
+    <circle cx="312" cy="155" r="4" fill="white"/>
+  </g>
+
+  <!-- ===== SUNNY YELLOW RABBIT ===== -->
+
+  <!-- Body -->
+  <ellipse cx="200" cy="278" rx="62" ry="68" fill="url(#bodyGrad)" filter="url(#softShadow)"/>
+  <!-- Belly -->
+  <ellipse cx="200" cy="288" rx="38" ry="50" fill="#fef9c3" />
+  <!-- Fluffy tail -->
+  <circle cx="200" cy="340" r="18" fill="#fbbf24" />
+  <circle cx="200" cy="338" r="12" fill="#fef3c7" opacity="0.9"/>
+
+  <!-- Front legs -->
+  <ellipse cx="168" cy="330" rx="15" ry="22" fill="#fbbf24" />
+  <ellipse cx="232" cy="330" rx="15" ry="22" fill="#fbbf24" />
+  <ellipse cx="168" cy="348" rx="18" ry="9" fill="#f59e0b" />
+  <ellipse cx="232" cy="348" rx="18" ry="9" fill="#f59e0b" />
+  <g stroke="#d97706" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6">
+    <line x1="162" y1="350" x2="162" y2="355"/>
+    <line x1="168" y1="352" x2="168" y2="357"/>
+    <line x1="174" y1="350" x2="174" y2="355"/>
+    <line x1="226" y1="350" x2="226" y2="355"/>
+    <line x1="232" y1="352" x2="232" y2="357"/>
+    <line x1="238" y1="350" x2="238" y2="355"/>
+  </g>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="188" rx="60" ry="56" fill="url(#bodyGrad)" />
+
+  <!-- Long rabbit ears (slightly tilted for personality) -->
+  <!-- Left ear (tilted outward) -->
+  <ellipse cx="170" cy="112" rx="22" ry="68" fill="#fbbf24" transform="rotate(-8,170,160)"/>
+  <ellipse cx="170" cy="112" rx="12" ry="54" fill="#fda4af" transform="rotate(-8,170,160)"/>
+  <!-- Right ear (tilted outward) -->
+  <ellipse cx="230" cy="112" rx="22" ry="68" fill="#fbbf24" transform="rotate(8,230,160)"/>
+  <ellipse cx="230" cy="112" rx="12" ry="54" fill="#fda4af" transform="rotate(8,230,160)"/>
+
+  <!-- Rosy cheeks -->
+  <circle cx="162" cy="200" r="18" fill="#fb7185" opacity="0.3"/>
+  <circle cx="238" cy="200" r="18" fill="#fb7185" opacity="0.3"/>
+
+  <!-- Left eye (wide and bright) -->
+  <circle cx="180" cy="182" r="20" fill="#1c1917" />
+  <circle cx="180" cy="182" r="15" fill="#292524" />
+  <circle cx="180" cy="182" r="10" fill="#fbbf24" filter="url(#glow)" />
+  <circle cx="180" cy="182" r="6" fill="#b45309" />
+  <circle cx="180" cy="182" r="3" fill="#1c1917" />
+  <circle cx="174" cy="176" r="4" fill="white" opacity="0.95" />
+  <circle cx="184" cy="188" r="2" fill="white" opacity="0.5" />
+
+  <!-- Right eye -->
+  <circle cx="220" cy="182" r="20" fill="#1c1917" />
+  <circle cx="220" cy="182" r="15" fill="#292524" />
+  <circle cx="220" cy="182" r="10" fill="#fbbf24" filter="url(#glow)" />
+  <circle cx="220" cy="182" r="6" fill="#b45309" />
+  <circle cx="220" cy="182" r="3" fill="#1c1917" />
+  <circle cx="214" cy="176" r="4" fill="white" opacity="0.95" />
+  <circle cx="224" cy="188" r="2" fill="white" opacity="0.5" />
+
+  <!-- Nose -->
+  <ellipse cx="200" cy="204" rx="7" ry="5" fill="#f43f5e" />
+  <circle cx="198" cy="202" r="2" fill="#fb7185" opacity="0.6"/>
+
+  <!-- Big bright smile -->
+  <path d="M186,214 Q200,230 214,214" stroke="#d97706" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Whiskers -->
+  <line x1="156" y1="206" x2="188" y2="208" stroke="#d97706" stroke-width="1.5" opacity="0.5"/>
+  <line x1="154" y1="212" x2="187" y2="213" stroke="#d97706" stroke-width="1.5" opacity="0.5"/>
+  <line x1="244" y1="206" x2="212" y2="208" stroke="#d97706" stroke-width="1.5" opacity="0.5"/>
+  <line x1="246" y1="212" x2="213" y2="213" stroke="#d97706" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Star on ear -->
+  <g fill="#f59e0b" opacity="0.8" transform="translate(162,88)">
+    <polygon points="0,-8 2,-3 8,-3 3,1 5,7 0,3 -5,7 -3,1 -8,-3 -2,-3"/>
+  </g>
+  <g fill="#f59e0b" opacity="0.8" transform="translate(238,88)">
+    <polygon points="0,-8 2,-3 8,-3 3,1 5,7 0,3 -5,7 -3,1 -8,-3 -2,-3"/>
+  </g>
+</svg>

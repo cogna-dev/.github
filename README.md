@@ -12,12 +12,11 @@
 
 ## Logo Options
 
-Multiple animal logo designs are available to choose from. All logos share a consistent dark-background circular style with subtle code/tech decorative elements.
+Four cute rabbit logo candidates are provided below — pick your favourite!
 
-| Preview | File | Animal |
-|---------|------|--------|
-| <img src="assets/logo.svg" width="120" height="120" alt="Owl" /> | `assets/logo.svg` | 🦉 Owl (current) |
-| <img src="assets/logo-fox.svg" width="120" height="120" alt="Fox" /> | `assets/logo-fox.svg` | 🦊 Fox |
-| <img src="assets/logo-cat.svg" width="120" height="120" alt="Cat" /> | `assets/logo-cat.svg` | 🐱 Cat |
-| <img src="assets/logo-rabbit.svg" width="120" height="120" alt="Rabbit" /> | `assets/logo-rabbit.svg` | 🐰 Rabbit |
-| <img src="assets/logo-panda.svg" width="120" height="120" alt="Panda" /> | `assets/logo-panda.svg` | 🐼 Panda |
+| Preview | File | Style |
+|---------|------|-------|
+| <img src="assets/logo-rabbit.svg" width="120" height="120" alt="Coral Rabbit" /> | `assets/logo-rabbit.svg` | 🐰 Warm coral — big smile, rosy cheeks, heart accents |
+| <img src="assets/logo-rabbit-yellow.svg" width="120" height="120" alt="Yellow Rabbit" /> | `assets/logo-rabbit-yellow.svg` | 🌟 Sunny yellow — tilted ears, star accents, bright glow |
+| <img src="assets/logo-rabbit-mint.svg" width="120" height="120" alt="Mint Rabbit" /> | `assets/logo-rabbit-mint.svg` | 🌿 Mint green — one droopy ear, flower crown, dimpled smile |
+| <img src="assets/logo-rabbit-pink.svg" width="120" height="120" alt="Pink Rabbit" /> | `assets/logo-rabbit-pink.svg` | 💕 Kawaii pink — bows on ears, heart nose, eyelashes |
