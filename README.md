@@ -12,11 +12,18 @@
 
 ## Logo Options
 
-Four bright, cute rabbit logo candidates — each with a distinct pose and tech-inspired decoration:
+Minimalist line-art running rabbit in a circle badge — two options per theme:
 
-| Preview | File | Pose | Tech Accent |
-|---------|------|------|-------------|
-| <img src="assets/logo-rabbit.svg" width="120" height="120" alt="Coral Rabbit" /> | `assets/logo-rabbit.svg` | 🐰 **Coding** — arms on keyboard, focused expression | Circuit traces · `</>` symbol |
-| <img src="assets/logo-rabbit-yellow.svg" width="120" height="120" alt="Yellow Rabbit" /> | `assets/logo-rabbit-yellow.svg` | 🌟 **Leaping** — body tilted mid-dash, ears swept back | Binary digits · circuit nodes · speed lines |
-| <img src="assets/logo-rabbit-mint.svg" width="120" height="120" alt="Mint Rabbit" /> | `assets/logo-rabbit-mint.svg` | 🌿 **Waving** — right arm raised high, friendly lean | `{ }` brackets · WiFi arcs · dot matrix |
-| <img src="assets/logo-rabbit-pink.svg" width="120" height="120" alt="Pink Rabbit" /> | `assets/logo-rabbit-pink.svg` | 💕 **Thinking** — paw to chin, eyes looking upward | Hex grid · thought bubble with `010` binary |
+### 🌤 Light themes
+
+| Preview | File | Accent |
+|---------|------|--------|
+| <img src="assets/logo-rabbit-light-1.svg" width="140" height="140" alt="Light Blue" /> | `assets/logo-rabbit-light-1.svg` | Blue `#2563EB` on white / light-blue canvas |
+| <img src="assets/logo-rabbit-light-2.svg" width="140" height="140" alt="Light Coral" /> | `assets/logo-rabbit-light-2.svg` | Coral `#E55A2B` on off-white / warm-cream canvas |
+
+### 🌙 Dark themes
+
+| Preview | File | Accent |
+|---------|------|--------|
+| <img src="assets/logo-rabbit-dark-1.svg" width="140" height="140" alt="Dark Navy Cyan" /> | `assets/logo-rabbit-dark-1.svg` | Cyan `#38BDF8` on dark-navy canvas |
+| <img src="assets/logo-rabbit-dark-2.svg" width="140" height="140" alt="Dark Emerald" /> | `assets/logo-rabbit-dark-2.svg` | Emerald `#34D399` on dark-forest-green canvas |
