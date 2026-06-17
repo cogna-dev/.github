@@ -8,6 +8,8 @@
 
 用 MoonBit 构建代码智能，一步一个脚印。
 
+<p>🌐 <a href="README.md">English</a> | <a href="README.zh.md">简体中文</a></p>
+
 </div>
 
 ---
@@ -42,6 +44,9 @@ Cogna 是一个代码分析平台，最初的目标是实现基于 **代码属�
 | Badge | 等级 | 说明 |
 | :---: | :--- | :--- |
 | ![NotReady](https://img.shields.io/badge/Maturity-NotReady-lightgrey?style=flat-square) | **NotReady** | 早期 / 暂停状态 — 仅有骨架结构，可能有部分代码但尚无活跃开发 |
+| ![Alpha](https://img.shields.io/badge/Maturity-Alpha-orange?style=flat-square) | **Alpha** | 核心功能已就绪，早期测试阶段 — 可能存在 Breaking Changes |
+| ![Beta](https://img.shields.io/badge/Maturity-Beta-yellow?style=flat-square) | **Beta** | 功能完备，具备测试和 CI — API 趋于稳定，适合评估 |
+| ![Stable](https://img.shields.io/badge/Maturity-Stable-brightgreen?style=flat-square) | **Stable** | 生产就绪，拥有正式发布版本、全面测试和完善的文档 |
 
 ---
 

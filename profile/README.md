@@ -8,6 +8,8 @@
 
 Building code intelligence, one MoonBit module at a time.
 
+<p>🌐 <a href="README.md">English</a> | <a href="README.zh.md">简体中文</a></p>
+
 </div>
 
 ---
@@ -42,6 +44,9 @@ The next phase will focus on [**parkit**](https://github.com/cogna-dev/parkit). 
 | Badge | Level | Description |
 | :---: | :--- | :--- |
 | ![NotReady](https://img.shields.io/badge/Maturity-NotReady-lightgrey?style=flat-square) | **NotReady** | Early / paused — skeleton structure, may have partial code but no active development yet |
+| ![Alpha](https://img.shields.io/badge/Maturity-Alpha-orange?style=flat-square) | **Alpha** | Core functionality in place, early testing — may have breaking changes |
+| ![Beta](https://img.shields.io/badge/Maturity-Beta-yellow?style=flat-square) | **Beta** | Feature-complete with tests and CI — API stabilizing, ready for evaluation |
+| ![Stable](https://img.shields.io/badge/Maturity-Stable-brightgreen?style=flat-square) | **Stable** | Production-ready with releases, comprehensive testing, and documentation |
 
 ---
 
